@@ -5,6 +5,7 @@ Version:	1.2.4beta
 Release:	1
 License:	GPL
 Group:		Applications/Publishing/XML
+Group(de):	Applikationen/Publizieren/XML
 Group(pl):	Aplikacje/Publikowanie/XML
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/richard/%{name}-%{version}.tar.gz
 URL:		http://www.cogsci.ed.ac.uk/~richard/rxp.html
@@ -20,17 +21,14 @@ RXP to waliduj±cy parser XML napisany w jêzyku C.
 %setup -q
 
 %build
-%{__make}
+%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -DCHAR_SIZE=16"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_mandir}/man1
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+
 install rxp $RPM_BUILD_ROOT%{_bindir}
 install rxp.1 $RPM_BUILD_ROOT%{_mandir}/man1
-
-%post   -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
 
 %clean
 rm -rf $RPM_BUILD_ROOT
