@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Publishing/XML
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/richard/%{name}-%{version}.tar.gz
+# Source0-md5:	ee57e34c88ce3460f7b3bd40af744ab4
 #Patch0:		%{name}-xmlcache.patch
 URL:		http://www.cogsci.ed.ac.uk/~richard/rxp.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
