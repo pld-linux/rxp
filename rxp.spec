@@ -1,5 +1,5 @@
 Summary:	XML 1.0 validating parser
-Summary(pl):	XML 1.0 validating parser
+Summary(pl):	Waliduj±cy analizator XML-a 1.0
 Name:		rxp
 Version:	1.3.0
 Release:	1
@@ -15,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 RXP is a validating XML parser written in C.
 
 %description -l pl
-RXP to waliduj±cy parser XML napisany w jêzyku C.
+RXP to waliduj±cy analizator sk³adniowy XML-a napisany w jêzyku C.
 
 %prep
 %setup -q
