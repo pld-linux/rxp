@@ -21,7 +21,7 @@ RXP to waliduj±cy parser XML napisany w jêzyku C.
 %setup -q
 
 %build
-%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS} -DCHAR_SIZE=16"
+%{__make} CFLAGS="%{rpmcflags} -DCHAR_SIZE=16"
 
 %install
 rm -rf $RPM_BUILD_ROOT
