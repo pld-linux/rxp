@@ -20,7 +20,7 @@ RXP to waliduj±cy parser XML napisany w jêzyku C.
 %setup -q
 
 %build
-%{__make} CHAR_SIZE=8
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
