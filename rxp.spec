@@ -5,8 +5,6 @@ Version:	1.2.5
 Release:	1
 License:	GPL
 Group:		Applications/Publishing/XML
-Group(de):	Applikationen/Publizieren/XML
-Group(pl):	Aplikacje/Publikowanie/XML
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/richard/%{name}-%{version}.tar.gz
 #Patch0:		%{name}-xmlcache.patch
 URL:		http://www.cogsci.ed.ac.uk/~richard/rxp.html
