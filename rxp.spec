@@ -1,13 +1,14 @@
 Summary:	XML 1.0 validating parser
 Summary(pl):	XML 1.0 validating parser
 Name:		rxp
-Version:	1.2.4beta
+Version:	1.2.5
 Release:	1
 License:	GPL
 Group:		Applications/Publishing/XML
 Group(de):	Applikationen/Publizieren/XML
 Group(pl):	Aplikacje/Publikowanie/XML
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/richard/%{name}-%{version}.tar.gz
+#Patch0:		%{name}-xmlcache.patch
 URL:		http://www.cogsci.ed.ac.uk/~richard/rxp.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -19,6 +20,7 @@ RXP to waliduj±cy parser XML napisany w jêzyku C.
 
 %prep
 %setup -q
+#%patch -p1
 
 %build
 %{__make} CFLAGS="%{rpmcflags} -DCHAR_SIZE=16"
