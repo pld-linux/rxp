@@ -1,12 +1,12 @@
 Summary:	XML 1.0 validating parser
 Summary(pl):	XML 1.0 validating parser
 Name:		rxp
-Version:	1.2.5
+Version:	1.3.0
 Release:	1
 License:	GPL
 Group:		Applications/Publishing/XML
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/richard/%{name}-%{version}.tar.gz
-# Source0-md5:	ee57e34c88ce3460f7b3bd40af744ab4
+# Source0-md5:	c894ea89b22ce398a830d8d6bf650fc8
 #Patch0:		%{name}-xmlcache.patch
 URL:		http://www.cogsci.ed.ac.uk/~richard/rxp.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
