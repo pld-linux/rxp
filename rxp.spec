@@ -1,5 +1,5 @@
 Summary:	XML 1.0 validating parser
-Summary(pl.UTF-8):   Analizator sprawdzający poprawność XML-a 1.0
+Summary(pl.UTF-8):	Analizator sprawdzający poprawność XML-a 1.0
 Name:		rxp
 Version:	1.4.4
 Release:	1
