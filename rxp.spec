@@ -7,7 +7,6 @@ License:	GPL
 Group:		Applications/Publishing/XML
 Source0:	ftp://ftp.cogsci.ed.ac.uk/pub/richard/%{name}-%{version}.tar.gz
 # Source0-md5:	9131f22e11182819b2e1ee2722260a5b
-#Patch0:		%{name}-xmlcache.patch
 URL:		http://www.cogsci.ed.ac.uk/~richard/rxp.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -20,10 +19,10 @@ napisany w języku C.
 
 %prep
 %setup -q
-#%patch -p1
 
 %build
 %{__make} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -DCHAR_SIZE=16"
 
 %install
